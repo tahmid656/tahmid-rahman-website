@@ -88,8 +88,9 @@ const Home: NextPage = () => {
 
   return (
       <div>
+          {/*Landing Page*/}
           <section id="hero" className="h-screen bg-[url('../public/assets/tr-bg.svg')] bg-no-repeat bg-center bg-cover bg-fixed">
-              <div className="h-screen flex justify-center items-center flex-col">
+              <div className="min-w-min-[100px] h-screen flex justify-center items-center flex-col">
                   {/*Hero Content*/}
                   <div className="z-20 text-zoom overflow-x-hidden">
                       <p className="font-['swiss'] text-white lg:text-4xl md:text-3xl sm:text-3xl text-2xl uppercase">Your Friendly</p>
@@ -124,6 +125,7 @@ const Home: NextPage = () => {
                   </div>
               </div>
           </section>
+          {/*Projects*/}
           <section id="projects" className="bg-tahurple w-full">
               <div className="flex flex-col md:flex-row global-container text-white items-start md:items-center px-5 sm:px-8 md:px-12 lg:px-0 py-4 md:py-8">
                   <h2 className="text-4xl font-black basis-2/4 font-['Abril_Fatface']">Projects</h2>
@@ -158,6 +160,7 @@ const Home: NextPage = () => {
                   }
               </div>
           </section>
+          {/*More*/}
           <section id="more" className="bg-[url('../public/assets/bg-1.svg')] bg-no-repeat bg-center bg-cover bg-fixed flex flex-col text-white justify-center items-center py-24 px-4">
               <h1 className="text-4xl font-black font-['swiss'] text-center">like what you see?</h1>
               <p className="text-xl my-2">explore my portfolio</p>
