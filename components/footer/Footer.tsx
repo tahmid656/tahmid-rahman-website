@@ -15,9 +15,9 @@ const Footer: NextPage = () => {
     const todaysDate = new Date().getFullYear();
 
     return (
-        <section id="footer" className="bg-tahurple w-full">
+        <section id="footer" className="bg-tahurple w-full border-t border-purple-600/30">
             <div className="flex flex-col sm:flex-row global-container text-white items-center px-5 sm:px-8 md:px-12 lg:px-0 py-4 justify-between">
-                <div className="text-4xl font-black font-['Abril_Fatface'] sm:flex hidden">
+                <div className="text-4xl font-black font-['abril'] sm:flex hidden">
                     <Image src={LogoFooter} alt="Logo" width="90%" height="25" objectFit="contain"></Image>
                 </div>
                 <div className="flex sm:flex-row flex-col text-sm text-tahpurple-light place-items-center gap-2 sm:gap-8">

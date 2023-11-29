@@ -8,13 +8,16 @@
   src: url("../public/fonts/swissek.ttf");
 }
 
+@font-face {
+  font-family: abril;
+  src: url("../public/fonts/abril.ttf");
+}
+
 html,
 body {
   box-sizing: border-box !important;
-  overflow-x: hidden;
   padding: 0;
   margin: 0;
-  font-family: 'Raleway', sans-serif;
   flex-grow: 1;
 }
 
@@ -27,12 +30,17 @@ a {
   box-sizing: border-box;
 }
 
+.modal-open {
+  overflow-y: hidden !important;
+}
+
 .global-container {
   max-width: 920px;
   margin: 0 auto;
 }
 
-.tooltip:hover .tooltip-text {
+.tooltip:hover
+.tooltip-text {
   visibility: visible;
 }
 
@@ -41,3 +49,8 @@ a {
   cursor: url("../public/cursor.png"), pointer;
 }
 
+.portfolio-container:hover
+.portfolio-info{
+  visibility: visible;
+  cursor: pointer;
+}
