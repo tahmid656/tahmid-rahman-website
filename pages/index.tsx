@@ -27,8 +27,8 @@ const heroAnimation = (scrollY: number, text: HTMLElement | null, object: HTMLEl
         object.style.transition = '.2s ease-in-out';
 
         // Accessing img elements inside the divs
-        const imgElement = object.querySelector('Image');
-        const imgElementTwo = objectTwo.querySelector('Image');
+        const imgElement = object.querySelector('Image') as HTMLImageElement;
+        const imgElementTwo = objectTwo.querySelector('Image') as HTMLImageElement;
 
         // Example: Manipulating the img elements
         if (imgElement && imgElementTwo) {
