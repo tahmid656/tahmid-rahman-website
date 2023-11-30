@@ -26,7 +26,6 @@ const Tutorials: NextPage = () => {
                     const videosResponse = await axios.get(
                         `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${uploadsPlaylistId}&maxResults=10&key=${apiKey}`
                     );
-                    console.log(videosResponse);
 
                     setVideos(videosResponse.data.items);
                 }

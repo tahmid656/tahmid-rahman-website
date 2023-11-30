@@ -21,21 +21,24 @@ const AboutMe: NextPage = () => {
         <section id="about-me" className="w-full pt-16 bg-tahurple">
             <Header title="About me" description="Get to know more about me." />
             <div className="flex justify-center bg-[url('../public/assets/about-me-bg.svg')] bg-no-repeat bg-center bg-cover bg-fixed border-t border-purple-600/30">
-                <div className="w-full flex flex-col items-center relative mx-5 sm:mx-8 md:mx-12 lg:mx-0 pt-24 pb-12">
+                <div className="w-full flex flex-col items-center relative mx-5 sm:mx-8 md:mx-12 lg:mx-0 pt-24 pb-24">
                     <div className="w-[8rem] my-8 rounded-[5rem] border border-purple-600/90 absolute top-0">
                         <Image className="border border-purple-600/30 rounded-[5rem] z-10" src={ Me } layout="responsive" objectFit="cover" />
                     </div>
                     <div className="w-full global-container flex flex-col gap-4 bg-tahurple/80 backdrop-blur-lg border border-purple-600/30
                     rounded-3xl px-8 pt-32 pb-8 top-36 items-center">
-                        <div className="w-[8rem]">
-                            <Image src={ TextLogo } layout="responsive" objectFit="cover" />
+                        <div className="flex flex-col items-center gap-4">
+                            <div className="w-[8rem]">
+                                <Image src={ TextLogo } layout="responsive" objectFit="cover" />
+                            </div>
+                            <p className="font-[swiss] text-white">Front End Team Lead & UI/UX Designer</p>
                         </div>
                         <img className="absolute right-8 top-8" src="./assets/clean.png" width="50rem" />
                         {/*<WiStars className="text-[8rem] text-white absolute right-0 top-0 text-[#D9BFFF]" />*/}
                         <div className="text-white flex flex-col gap-2">
                             <p>
                                 { `
-                                Hey there! If there's one thing you've probably caught onto about me by now, I'm practically married to purple – it's my main squeeze! Raised in the cool vibes of Chattogram, Bangladesh, I soaked up enough creativity to become the designer you see here.
+                                Hey there! If there's one thing you've probably caught onto about me by now, I'm practically married to purple – it's my main squeeze! Raised in Chattogram, Bangladesh, I soaked up enough creativity to become the designer you see here.
                                 ` }
                             </p>
                             <p>

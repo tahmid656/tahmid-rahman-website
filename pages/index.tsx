@@ -13,10 +13,7 @@ import { IoIosArrowForward } from 'react-icons/io';
 import { Header } from '../components/header/Header';
 
 const heroAnimation = (scrollY: number, text: HTMLElement | null, object: HTMLElement | null, objectTwo: HTMLElement | null) => {
-    console.log('trtert');
-    console.log(object, objectTwo)
     if (text && object && objectTwo) {
-        console.log('here');
         const leftImageScroll = scrollY * 0.06;
         const rightImageScroll = scrollY * -0.05;
         const zoomText = scrollY * 0.0003 + 1;
@@ -39,10 +36,10 @@ const heroAnimation = (scrollY: number, text: HTMLElement | null, object: HTMLEl
     }
 };
 
-const debounce = (func: Function, wait: number) => {
+const debounce = <T extends (...args: any[]) => any>(func: T, wait: number) => {
     let timeout: NodeJS.Timeout;
 
-    return function (...args: any[]) {
+    return function (this: ThisParameterType<T>, ...args: Parameters<T>) {
         clearTimeout(timeout);
         timeout = setTimeout(() => func.apply(this, args), wait);
     };
@@ -59,8 +56,8 @@ const Home: NextPage = () => {
     const projects = [
         { name: 'APSpace Web App', img: 'https://i.imgur.com/Asw0IdO.png', icons: [SiAngular ,SiIonic], type: 'img'},
         { name: 'Curiosity', img: 'https://i.imgur.com/xAAE1bX.mp4' , icons: [SiAdobeillustrator, SiAdobeaftereffects], type: 'vid' },
-        { name: 'Florida Tulip Agro', img: Gal1, icons: [SiAdobeillustrator, SiAdobephotoshop], type: 'img' },
-        { name: 'Doge', img: Gal2 , icons: [SiAdobeillustrator, SiAdobephotoshop], type: 'img'}
+        { name: 'Florida Tulip Agro', img: 'https://i.imgur.com/SHlpE6d.png', icons: [SiAdobeillustrator, SiAdobephotoshop], type: 'img' },
+        { name: 'Doge', img: 'https://i.imgur.com/6t5rWNO.png', icons: [SiAdobeillustrator, SiAdobephotoshop], type: 'img'}
     ];
 
     const debouncedHeroAnimation = debounce((scrollY: number) => {
