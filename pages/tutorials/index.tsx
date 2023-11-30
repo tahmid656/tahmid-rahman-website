@@ -29,7 +29,7 @@ const Tutorials: NextPage = () => {
 
                     setVideos(videosResponse.data.items);
                 }
-            } catch (error) {
+            } catch (error: any) {
                 console.error("Error fetching YouTube data:", error.message);
             }
         };
@@ -42,7 +42,7 @@ const Tutorials: NextPage = () => {
             <div className="border-t border-purple-600/30 pt-8">
                 <ResponsiveMasonry columnsCountBreakPoints={{640: 2, 1000: 4}} className="px-4 sm:px-8">
                     <Masonry columnsCount={4} gutter="1rem">
-                        {videos.map((video) => (
+                        {videos.map((video: any) => (
                             <Link key={video.id} href={`https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`}>
                                 <a target="_blank">
                                     <div className="border border-purple-600/30 rounded-3xl">

@@ -42,7 +42,7 @@ const Portfolio: NextPage = () => {
         )
     };
 
-    const contentProps = (img: string, type: string) => {
+    const contentProps = (img: string, type: 'img' | 'vid') => {
         setModalImageUrl(img);
         setContentType(type);
     };
