@@ -93,12 +93,12 @@ const Home: NextPage = () => {
 
 
   return (
-      <div>
+      <div className="w-full">
           {/*Landing Page*/}
           <section id="hero" className="h-screen" style={heroBg}>
-              <div className="min-w-min-[100px] h-screen flex justify-center items-center flex-col">
+              <div className="min-w-min-[100px] h-screen flex justify-center items-center flex-col overflow-hidden">
                   {/*Hero Content*/}
-                  <div className="text-zoom z-20 overflow-x-hidden transition ease-in duration-100">
+                  <div className="text-zoom z-20 transition ease-in duration-100">
                       <p className="font-['swiss'] text-white lg:text-4xl md:text-3xl sm:text-3xl text-2xl uppercase">Your Friendly</p>
                       <div className="font-['swiss'] flex md:flex-row flex-col font-black lg:text-8xl md:text-7xl sm:text-8xl text-7xl text-white pb-2 tracking-wide uppercase">
                           <p className="overflow-hidden">Dev</p>
@@ -138,7 +138,7 @@ const Home: NextPage = () => {
                                   {
                                       project.type === 'img' ?
                                           <Image className="rounded-3xl" src={project.img} alt="Logo" objectFit="cover" layout="fill" />
-                                          : <video className="rounded-3xl" src={project.img} autoPlay={true} loop={true} />
+                                          : <video className="rounded-3xl" src={project.img} autoPlay loop playsInline />
                                   }
                                   <Link href="">
                                       <div className="project-info top-0 w-full h-full absolute invisible flex flex-col

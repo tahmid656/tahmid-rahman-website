@@ -65,11 +65,11 @@ const Portfolio: NextPage = () => {
                             filteredItems.map(res => {
                                 return (
                                     <div key={res.id} onClick={() => contentProps(res.imageUri, res.type)} className="portfolio-container
-                                    border relative border-purple-600/90 rounded-3xl min-h-[12rem]">
+                                    border relative border-purple-600/90 rounded-3xl min-h-[4rem]">
                                         {
                                             res.type === 'img' ?
                                                 <img loading="lazy" className="rounded-3xl" srcSet={res.imageUri} alt=""/> :
-                                                <video className="rounded-3xl" src={res.imageUri} autoPlay={true} loop={true}/>
+                                                <video className="rounded-3xl" src={res.imageUri} autoPlay loop playsInline />
                                         }
                                         <div className="portfolio-info top-0 w-full h-full absolute invisible flex flex-col
                                         items-center justify-end gap-2 text-white px-3 py-[-12] opacity-0 hover:pb-6 hover:opacity-100
