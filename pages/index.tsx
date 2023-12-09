@@ -1,7 +1,5 @@
 import type { NextPage } from 'next'
 import Image from 'next/image';
-import Gal1 from '../public/assets/gal-1.png';
-import Gal2 from '../public/assets/gal-2.png';
 import Foreground1 from '../public/assets/foreground-1.svg';
 import Foreground2 from '../public/assets/foreground-2.svg';
 import ForegroundMobile from '../public/assets/bg-mobile.png';
