@@ -136,7 +136,7 @@ const Home: NextPage = () => {
                                   {
                                       project.type === 'img' ?
                                           <Image className="rounded-3xl" src={project.img} alt="Logo" objectFit="cover" layout="fill" />
-                                          : <video className="rounded-3xl" src={project.img} autoPlay loop playsInline />
+                                          : <video className="rounded-3xl" src={project.img} autoPlay loop playsInline muted />
                                   }
                                   <Link href="">
                                       <div className="project-info top-0 w-full h-full absolute invisible flex flex-col
