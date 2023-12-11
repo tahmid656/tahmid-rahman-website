@@ -69,7 +69,7 @@ const Portfolio: NextPage = () => {
                                         {
                                             res.type === 'img' ?
                                                 <img loading="lazy" className="rounded-3xl" srcSet={res.imageUri} alt=""/> :
-                                                <video className="rounded-3xl" src={res.imageUri} autoPlay loop playsInline />
+                                                <video className="rounded-3xl" src={res.imageUri} autoPlay loop playsInline muted />
                                         }
                                         <div className="portfolio-info top-0 w-full h-full absolute invisible flex flex-col
                                         items-center justify-end gap-2 text-white px-3 py-[-12] opacity-0 hover:pb-6 hover:opacity-100
