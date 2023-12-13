@@ -8,9 +8,10 @@ function MyApp({ Component, pageProps }: AppProps) {
       <>
           <Head>
               <meta charSet="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
               <link rel="icon" href="/favicon.ico" />
               <meta name="google-site-verification" content="slGOfNuGEAUl2qKewcGRYOyvCaWee0lSrs1ilUMJ4g4" />
-              <meta name="keywords" content="Tahmid,Tahmid Rahman,Rahman,Tahmid Rahman Designs, ,Tahmid Rahman Graphic Designer, Top level Graphic Designer, Graphic Designer Bangladesh" />
+              <meta name="keywords" content="Tahmid,Tahmid Rahman,Rahman,Tahmid Rahman Designs, Tahmid Rahman Graphic Designer, Top level Graphic Designer, Graphic Designer Bangladesh" />
               <title>Tahmid Rahman</title>
               <meta name="title" content="Tahmid Rahman - Dev + igner" />
               <meta name="description" content="Tahmid Rahman is a full-stack developer & graphic designer, hails from Bangladesh and is currently residing in Malaysia." />
